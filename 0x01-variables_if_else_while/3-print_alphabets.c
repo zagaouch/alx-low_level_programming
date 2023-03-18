@@ -13,7 +13,7 @@ while (c <= 'z')
 putchar(c);
 c++;
 }
-hile (C <= 'Z')
+while (C <= 'Z')
 {
 putchar(C);
 C++;
