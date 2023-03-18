@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-int a;
+int i;
 
 for(i=0,i<10,i++)
 {
-printf("%d",a);
+printf("%d", a);
 }
 printf("\n");
 return (0);
