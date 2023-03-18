@@ -10,6 +10,7 @@ char c = 'a';
 while (c <= 'z')
 {
 if( c != 'e')
+{
 if( c != 'q')
 {
 putchar(c);
