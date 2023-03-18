@@ -9,10 +9,12 @@ int main(void)
 char c = 'a';
 while (c <= 'z')
 {
-if( c != 'e' || c != 'q')
+if( c != 'e')
+if( c != 'q')
 {
 putchar(c);
 c++;
+}
 }
 }
 putchar('\n');
