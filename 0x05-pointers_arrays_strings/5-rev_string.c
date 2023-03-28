@@ -4,7 +4,8 @@
  * rev_string - reverse string
  * @s : string
  */
-void rev_string(char *s) {
+void rev_string(char *s)
+{
 	int length = strlen(s);
 	int i, j;
 	char temp;
