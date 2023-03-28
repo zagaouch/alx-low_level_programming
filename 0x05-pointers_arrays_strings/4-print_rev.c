@@ -4,14 +4,12 @@
  * print_rev - prints a string, in reverse
  * @s : string
  */
-
-void print_rev(char *s)
-{
-	int i;
-
-	for(i = (strlen (s) - 1) ; i >= 0 ; i--)
-	{
-		printf("%c", s[i]);
-	}
-	printf("\n");
+void print_rev(char *s) {
+    int length = strlen(s);
+   
+    for (int i = length - 1; i >= 0; i--) {
+        printf("%c", s[i]);
+    }
+    printf("\n");
 }
+
