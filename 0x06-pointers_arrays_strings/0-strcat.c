@@ -3,24 +3,24 @@
  * _strcat - function that concatenates two strings
  * @src : string source
  * @dest :  string desination
- * return : 0
+ * return : dest
  */
 char *_strcat(char *dest, char *src)
 {
-	int i,j;
+	int ls,ld;
 
-	i = 0;
-	j = 0; 
+	ld = 0;
+	ls = 0; 
 
-	while(*(dest + i))
-		i++;
+	while(*(dest + ld))
+		ld++;
 	
-	while(*(src + j) && i < 97)
+	while(*(src + ls) && ld < 97)
 	{
-		*(dest + i) = *(src + j);
-		i++;
-		j++;
+		*(dest + ld) = *(src + ls);
+		ld++;
+		ls++;
 	}
-	*(dest + i) = '\0';
+	*(dest + ld) = '\0';
 	return (dest);
 }
