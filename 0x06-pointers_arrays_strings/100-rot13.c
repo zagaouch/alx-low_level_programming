@@ -10,7 +10,7 @@ char *rot13(char *str)
 	char *p = str;
 	int i, j;
 	char letters[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char leet[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (i = 0; str[i]; i++)
 	{
@@ -18,7 +18,7 @@ char *rot13(char *str)
 		{
 			if (str[i] == letters[j])
 			{
-				str[i] = leet[j];
+				str[i] = rot[j];
 				break;
 			}
 		}
