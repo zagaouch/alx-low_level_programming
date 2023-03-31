@@ -1,6 +1,6 @@
 #include "main.h"
 /*
- * _strncpy - concatenate strings, defining the size of second string.
+ * _strcat - concatenate strings, defining the size of second string.
  * @dest: string with concatenation
  * @src: string to be concatenated
  * @n: size of second string
