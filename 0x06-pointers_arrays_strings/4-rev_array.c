@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * reverse_array - reverses the content of an array of integers
  * @a: pointer to the first element of the array
@@ -6,7 +6,8 @@ include "main.h"
  */
 void reverse_array(int *a, int n)
 {
-	int i, temp;
+	int i;
+	int temp;
 	
 	for (i = 0; i < n / 2; i++)
 	{
