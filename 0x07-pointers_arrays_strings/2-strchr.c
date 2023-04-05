@@ -2,11 +2,11 @@
 #define NULL 0
 
 /**
- * _strchr - locates a character in a string.
+ * _strchr - function that locates a character in a string.
  * @s: string
  * @c: character t find in the string
  *
- * return string s
+ * Return: memory area
  */
 char *_strchr(char *s, char c)
 {
