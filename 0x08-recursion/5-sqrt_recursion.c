@@ -8,11 +8,11 @@
  */
 int cal_sqrt(int n, int i)
 {
-        if (i * i == n)
-                return (i);
-        if (i * i > n)
-                return (-1);
-        return (cal_sqrt(n, i + 1));
+	if (i * i == n)
+		return (i);
+	if (i * i > n)
+	       	return (-1);
+	return (cal_sqrt(n, i + 1));
 }
 /**
  * _sqrt_recursion - calculates the natural square root of a number
