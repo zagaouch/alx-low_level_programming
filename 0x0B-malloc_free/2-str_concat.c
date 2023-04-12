@@ -9,16 +9,18 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int len;
+	int len1;
+	int len2;
 	char *concat;
 
 	if (s2 == NULL || s1 == NULL)
 		return (NULL);
-	len = strlen(s1);
-	len = len + strlen(s2);
-	concat = (char *)malloc((len + 1) * sizeof(char));
+	len1 = strlen(s1);
+	len2 = strlen(s2);
+	concat = (char *)malloc((len1 + len2 + 1) * sizeof(char));
 	if (concat == NULL)
 		return (NULL);
-	concat = strcat(s1,s2);
+	strcpy(concat, s1);
+	strcat(concat, s2);
 	return (concat);
 }
