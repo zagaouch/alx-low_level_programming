@@ -4,7 +4,7 @@
 
 /**
  * free_grid - frees a 2 dimensional arry
- * @grid: pointer to 2D array
+ * @grid: pointer to 2D array.
  * @height: height of array
  */
 
