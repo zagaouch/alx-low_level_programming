@@ -1,3 +1,5 @@
+#ifndef D_FILE
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -14,3 +16,4 @@ struct dog
 	float age;
 	char *owner;
 };
+#endif
