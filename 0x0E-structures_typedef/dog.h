@@ -1,4 +1,5 @@
 #ifndef D_FILE
+#define D_FILE
 
 #include <stdio.h>
 #include <stdlib.h>
