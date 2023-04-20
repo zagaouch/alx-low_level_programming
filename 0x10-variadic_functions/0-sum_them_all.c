@@ -19,7 +19,7 @@
     if (n == 0)
         return (0);
     for (i = 0; i < n; i++){
-        sum = sum + countPtr;
+        sum = sum + va_arg(countPtr, int);
     }
 
     va_end(countPtr);
