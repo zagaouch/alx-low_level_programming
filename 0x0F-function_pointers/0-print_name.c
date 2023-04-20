@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
 /**
  * print_name - function to print a name
  * @name: the name
