@@ -10,18 +10,16 @@
  
  int sum_them_all(const unsigned int n, ...)
  {
-    va_list countPtr;
-    va_start(countPtr, n);
+va_list countPtr;
+va_start(countPtr, n);
     
-    unsigned int i;
-    unsigned int sum = 0;
+unsigned int i;
+unsigned int sum = 0;
 
-    if (n == 0)
-        return (0);
-    for (i = 0; i < n; i++){
-        sum = sum + va_arg(countPtr, int);
-    }
-
-    va_end(countPtr);
-    return (sum);
+if (n == 0)
+return (0);
+for (i = 0; i < n; i++)
+sum = sum + va_arg(countPtr, int);
+va_end(countPtr);
+return (sum);
  }
