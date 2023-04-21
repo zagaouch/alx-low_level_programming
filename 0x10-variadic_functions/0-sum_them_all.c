@@ -9,11 +9,10 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list countPtr;
-
-	va_start(countPtr, n);
-
 	unsigned int i;
 	unsigned int sum = 0;
+
+	va_start(valist, n);
 
 	if (n == 0)
 		return (0);
