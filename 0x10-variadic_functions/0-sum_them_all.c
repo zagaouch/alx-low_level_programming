@@ -8,8 +8,8 @@
  *Return: 0 or sum
  */
  
- int sum_them_all(const unsigned int n, ...)
- {
+int sum_them_all(const unsigned int n, ...)
+{
 va_list countPtr;
 va_start(countPtr, n);
     
