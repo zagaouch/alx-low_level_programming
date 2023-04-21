@@ -4,7 +4,6 @@
 /**
  * sum_them_all - function that returns the sum of all its parameters.
  * @n: argement number
- * 
  * Return: sum or 0
  */
 
