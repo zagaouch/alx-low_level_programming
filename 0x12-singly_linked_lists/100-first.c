@@ -1,3 +1,4 @@
+#include "lists.h"
 #include <stdio.h>
 /**
  * message - printf a message
