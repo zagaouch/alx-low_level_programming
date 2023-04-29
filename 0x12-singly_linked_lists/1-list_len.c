@@ -3,18 +3,17 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * print_list - that prints all the elements of a list_t
+ * list_len- function that returns the number of elements in a linked list_t list.
  * @h: linked list
  *
- * Return: number of nodes
+ * Return: number
  */
-size_t print_list(const list_t *h)
+size_t list_len(const list_t *h)
 {
 	size_t count = 0;
 	
 	while (h != NULL)
 	{
-		printf("[%d] %s\n", h->len, h->str != NULL ? h->str : "(nil)");
 		h = h->next;
 		count++;
 	}
