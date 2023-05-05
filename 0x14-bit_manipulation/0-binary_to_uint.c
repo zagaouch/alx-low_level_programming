@@ -14,13 +14,13 @@ unsigned int binary_to_uint(const char *b)
 	int i, size;
 
 	if (b == NULL)
-		return (NULL);
+		return (0);
 	size = strlen(b);
-	for(i = 0;i < size; i++)
+	for (i = 0; i < size; i++)
 	{
-		if (b[i] != '0' && b[i] != '1'
+		if (b[i] != '0' && b[i] != '1')
 				return (0);
-		num += (b[i] - '0') * pow(2, size i - 1);
+		num += (b[i] - '0') * pow(2, size - i - 1);
 	}
-	return (sum);
+	return (num);
 }
