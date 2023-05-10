@@ -1,31 +1,51 @@
 #include "main.h"
 
 /**
- * append_text_to_file - function that appends text at the end of a file.
- * @filename: file name
- * @text_content: content text
- * Return: 1 on success and -1 on failure
+ * _strlen - find length of string
+ * @str: string
+ * Return: length
  */
+int _strlen(char *str)
+{
+	int len;
 
+	for (len = 0; str[len] != '\0'; len++)
+		;
+
+	return (len);
+}
+
+/**
+ * append_text_to_file - a function that appends text at the end of a file.
+ * @filename: file
+ * @text_content: appends this content into file
+ * Return: 1 on success, -1 on error
+ */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int numw;
+	int fd;
+	int n_wrote;
 
-
-	if (filename == NULL)
+	if (!filename)
 		return (-1);
-	if (text_content == NULL)
-		return (1);
-	FILE *file = fopen(filename, "a");
 
-	if (file == NULL)
+	fd = open(filename, O_WRONLY | O_APPEND);
+	if (fd == -1)
 		return (-1);
-	numw = fprintf(file, "%s", text_content);
-	if (numw < 0)
+
+	if (!text_content)
 	{
-		fclose(file);
+		close(fd);
+		return (1);
+	}
+
+	n_wrote = write(fd, text_content, _strlen(text_content));
+	if (n_wrote == -1 || n_wrote != _strlen(text_content))
+	{
+		close(fd);
 		return (-1);
 	}
-	fclose(file);
+
+	close(fd);
 	return (1);
 }
