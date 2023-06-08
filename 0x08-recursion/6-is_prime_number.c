@@ -7,11 +7,13 @@
  */
 int is_prime_number(int n)
 {
+	int i = n;
+
 	if (n == 0)
 		return (0);
 	if (n == 1)
 		return (1);
-	prime(n, n);
+	prime(n, i);
 }
 /**
  * prime - helper function
