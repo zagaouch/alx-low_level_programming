@@ -1,4 +1,4 @@
-#incluse "main.h"
+#include "main.h"
 
 /**
  * main - show he program name
