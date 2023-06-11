@@ -6,7 +6,7 @@
  * @argc: the number if argumnet
  * Return: 0
  */
-intmain(int argc, char *argv[])
+int main(int argc, char *argv[])
 {	
 	int i;
 
