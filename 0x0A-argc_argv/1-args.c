@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - show he program name
+ * main - show the numbers program
  * @argv: the arguments
  * @argc: the number if argumnet
  * Return: number of ergument
