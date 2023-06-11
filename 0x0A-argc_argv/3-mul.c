@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 	int res, n, m;
 
 	if ( argc != 3)
-		printf("error\n");
+		printf("Error\n");
 	else
 	{
 		n = atoi(argv[1]);
