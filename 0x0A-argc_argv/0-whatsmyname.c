@@ -7,6 +7,7 @@
  */
 void main(int argc, char *argv[])
 {
+	(void) argc; 
 	if (argc > 0)
 		printf("%s\n", argv[0]);
 }
