@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 		m = atoi(argv[2]);
 
 		res = n * m;
-		printf("Multiplication result: %d\n", res);
+		printf("%d\n", res);
 	}
 	return (0);
 }
