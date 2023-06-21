@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * print_name - printf a name
+ * @f: Function pointers
  * @name: the name
  */
 
