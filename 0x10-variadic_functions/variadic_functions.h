@@ -20,4 +20,5 @@ typedef struct dt
 	void (*func)(va_list);
 } datatype;
 #include <stdarg.h>
+#include <stdio.h>
 #endif
