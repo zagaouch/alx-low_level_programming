@@ -3,15 +3,16 @@
  * print_all -  function that prints anything.
  * @format: format of arg
  */
-void print_all(const char* const format, ...)
+void print_all(const char * const format, ...)
 {
 	va_list args;
+
 	va_start(args, format);
 
 	char c;
 	int i;
 	float f;
-	char* s;
+	char *s;
 	int argCount = 0;
 
 	while ((c = format[argCount]) != '\0')
@@ -44,7 +45,7 @@ void print_all(const char* const format, ...)
 				printf("%s", s);
 		}
 
-		argCount++;
+	argCount++;
 	}
 
 	va_end(args);
