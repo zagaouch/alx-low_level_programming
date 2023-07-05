@@ -5,24 +5,38 @@
  * free_listint_safe - Frees a listint_t linked list
  * @h: Pointer to the head node of the list
  *
- * Return: Size of the list that was freed
+ * Return: Size of the list that was free
  */
 size_t free_listint_safe(listint_t **h)
 {
-	listint_t *current = *h, *tmp;
-	size_t count = 0;
+	size_t len = 0;
+	int diff;
+	listint_t *temp;
 
-	while (current)
+	if (!h || !*h)
+		return (0);
+
+	while (*h)
 	{
-		tmp = current->next;
-		free(current);
-		count++;
-		if (tmp >= current)
+		diff = *h - (*h)->next;
+		if (diff > 0)
 		{
+			temp = (*h)->next;
+			free(*h);
+			*h = temp;
+			len++;
+		}
+		else
+		{
+			free(*h);
 			*h = NULL;
+			len++;
 			break;
 		}
-		current = tmp;
 	}
-	return (count);
+
+	*h = NULL;
+
+	return (len);
 }
+
