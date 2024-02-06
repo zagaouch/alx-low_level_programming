@@ -6,8 +6,8 @@
 #include <stdlib.h>
 
 /**
- *
- * @n: Integer
+ * struct listint_s - Node of a  table
+ * @n : Integer
  * @index: Index of the node in the list
  * @next: Pointer to the next node
  *
